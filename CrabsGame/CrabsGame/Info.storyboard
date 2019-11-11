@@ -115,7 +115,7 @@
         <scene sceneID="ftZ-py-PHq">
             <objects>
                 <navigationController storyboardIdentifier="InfoNavigation" automaticallyAdjustsScrollViewInsets="NO" id="QjA-Rl-GxG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Info" selectedImage="info" id="KyS-Dc-n3h"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info" id="JCs-pt-zZ4"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gMv-N4-isz">

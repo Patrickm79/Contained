@@ -62,7 +62,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ahj-co-SJj"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" selectedImage="settings" id="R7S-6f-UK6"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="R7S-6f-UK6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlF-Wf-cqq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,11 +88,11 @@
                             <constraint firstItem="lWU-TL-cJF" firstAttribute="trailing" secondItem="P2e-y6-3QM" secondAttribute="trailing" id="aZf-DE-OJW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lWU-TL-cJF"/>
-                        <connections>
-                            <outlet property="skView" destination="P2e-y6-3QM" id="Uw2-Mu-VTw"/>
-                        </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Play" selectedImage="game_controller" id="opZ-3x-AM4"/>
+                    <tabBarItem key="tabBarItem" title="Play" image="game_controller" selectedImage="game_controller" id="opZ-3x-AM4"/>
+                    <connections>
+                        <outlet property="skview" destination="P2e-y6-3QM" id="ybX-AX-zkW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qe-HZ-xKX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,7 +121,7 @@
         <scene sceneID="Cj2-YB-IkD">
             <objects>
                 <viewControllerPlaceholder storyboardName="Info" referencedIdentifier="InfoNavigation" id="ybd-Te-Q0c" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="y9V-3e-FZS"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info" id="y9V-3e-FZS"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVt-9N-NXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,6 +130,7 @@
     </scenes>
     <resources>
         <image name="game_controller" width="30" height="30"/>
+        <image name="info" width="30" height="30"/>
         <image name="settings" width="30" height="30"/>
     </resources>
 </document>

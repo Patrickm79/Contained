@@ -6,32 +6,22 @@
 //  Copyright © 2019 Patrick Millet. All rights reserved.
 //
 
-import SpriteKit
+    import UIKit
+    import SpriteKit
 
-class GameViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    
-    class GamesViewController: UIViewController {
+    class GameViewController: UIViewController {
         
         @IBOutlet weak var skview: SKView!
         
-        var skscene: CustomScene? = nil
         
+        var skscene: CustomScene? = nil
+
         override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(animated)
             skscene = CustomScene(size: view.bounds.size)
             skview.presentScene(skscene)
         }
     }
-    
-    
 
     /*
     // MARK: - Navigation
@@ -42,5 +32,3 @@ class GameViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
